@@ -1,0 +1,263 @@
+html, body {
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: MyriadproBold;
+    src: url("../assets/font/MYRIADPRO-BOLD.otf");
+}
+
+@font-face {
+    font-family: MyriadproRegular;
+    src: url("../assets/font/MYRIADPRO-REGULAR.otf");
+}
+
+@font-face {
+    font-family: MyriadproLight;
+    src: url("../assets/font/MyriadPro-Light.otf");
+}
+
+
+/*styles for homepage*/
+#wuyang_ani {
+    width: 50%;
+    padding-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: wuyangfadein 2s;
+}
+
+#intro {
+    padding-top: 1.5%;
+    font-family: MyriadproLight;
+    text-align: center;
+    color: #454545;
+    -webkit-animation: wuyangfadein 2s;
+}
+
+#images {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#serendipity {
+    width: 30%;
+    margin-left: 2%;
+}
+
+#stockholm {
+    width: 30%;
+    margin-right: 2%;
+}
+
+#sociology_and_sashimi {
+    width: 22%;
+    margin-right: 2%;
+}
+
+#sociology {
+    width: 100%;
+    height: 52%;
+    padding-bottom: 3%;
+    border-image-width: 0;
+}
+
+#sashimi {
+    width: 100%;
+    height: 42%;
+    border-image-width: 0;
+    border: 0;
+}
+
+#snape {
+    width: 12%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clear
+{
+    clear:both;
+}
+
+li {
+    float: left;
+}
+
+
+.btn:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.btn {
+    display: block;
+    vertical-align: top;
+    -webkit-animation: btnfadein 3s;
+    transition: all .2s ease-in-out;
+}
+
+
+@keyframes wuyangfadein {
+    from {
+        opacity: 0;
+        transform: translateY(10vw);
+    }
+    to   {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes btnfadein {
+    from {
+        opacity: 0;
+        transform: translateY(-10vw);
+    }
+    to   {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/*styles for introduction pages*/
+#stockholm_ani, #sashimi_ani, #serendipity_ani, #snape_ani {
+    width: 40%;
+    float: left;
+    padding-top: 10%;
+    padding-left: 10%;
+
+}
+
+#sociology_ani {
+    width: 40%;
+    float: left;
+    padding-top: 15%;
+    padding-left: 10%;
+}
+
+.content {
+    width: 40%;
+    float: left;
+    padding-top: 25%;
+    padding-left: 5%;
+    -webkit-animation: contentfadein 2s;
+}
+
+.ani {
+    -webkit-animation: anifadein 2s;
+}
+
+.back_home_icon {
+    height: 2vw;
+}
+
+.back_home_link {
+    font-size: 1vw;
+}
+
+.left {
+    height: 2vw;
+    padding-right: 8vw;
+}
+
+.right {
+    height: 2vw;
+}
+
+.intro_title {
+    font-family: MyriadproBold;
+    font-size: 3vw;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+}
+
+.intro_body {
+    font-family: MyriadproLight;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+
+@keyframes contentfadein {
+    from {
+        opacity: 0;
+    }
+    to   {
+        opacity: 1;
+    }
+}
+
+@keyframes anifadein {
+    from {
+        opacity: 0;
+    }
+    to   {
+        opacity: 1;
+    }
+}
+
+
+/*responsive design*/
+@media only screen and (max-width: 600px) {
+    #images {
+        width: 82.7%;
+    }
+
+    #wuyang {
+        width: 82.7%;
+        padding-top: 11.7%;
+    }
+
+    #intro {
+        font-size: 2.89vw;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #images {
+        width: 496px;
+        height: 124px;
+    }
+
+    #wuyang {
+        width: 496px;
+        padding-top: 70px;
+    }
+
+    #intro {
+        font-size: 17.36px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    #images {
+        width: 50%;
+    }
+
+    #wuyang {
+        width: 50%;
+        padding-top: 7%;
+    }
+
+    #intro {
+        font-size: 2.5vw;
+    }
+}
