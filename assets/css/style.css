@@ -1,3 +1,5 @@
+/*styles for all pages*/
+
 html, body {
     background-color: #FFF;
     width: 100%;
@@ -8,17 +10,17 @@ html, body {
 
 @font-face {
     font-family: MyriadproBold;
-    src: url("../assets/font/MYRIADPRO-BOLD.otf");
+    src: url("../font/MYRIADPRO-BOLD.otf");
 }
 
 @font-face {
     font-family: MyriadproRegular;
-    src: url("../assets/font/MYRIADPRO-REGULAR.otf");
+    src: url("../font/MYRIADPRO-REGULAR.otf");
 }
 
 @font-face {
     font-family: MyriadproLight;
-    src: url("../assets/font/MyriadPro-Light.otf");
+    src: url("../font/MyriadPro-Light.otf");
 }
 
 
@@ -133,7 +135,7 @@ li {
 
 
 
-/*styles for introduction pages*/
+/*styles for detailed pages*/
 #stockholm_ani, #sashimi_ani, #serendipity_ani, #snape_ani {
     width: 40%;
     float: left;
@@ -152,8 +154,8 @@ li {
 .content {
     width: 40%;
     float: left;
-    padding-top: 25%;
     padding-left: 5%;
+    padding-top: 20%;
     -webkit-animation: contentfadein 2s;
 }
 
